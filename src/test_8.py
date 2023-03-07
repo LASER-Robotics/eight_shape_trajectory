@@ -47,11 +47,11 @@ class groundRobot:
 
             self.move_base.send_goal(self.goal)
             
-            while(DEFAULT_DISTANCE > self.distance_tolerance):
-                now = rospy.Time.now()
-                self.listener.waitForTransform(self.goal.target_pose.header.frame_id, now, rospy.Duration(2.0))
-                trans,rot = self.listener.lookupTransform(self.odom_frame_id, self.base_frame_id, now)
-                distance = math.sqrt(pow(self.points_x[i]-trans[0],2)+pow(self.points_y[i].pose.pose.position.y-trans[1],2))
+            # while(DEFAULT_DISTANCE > self.distance_tolerance):
+            #     now = rospy.Time.now()
+            #     self.listener.waitForTransform(self.goal.target_pose.header.frame_id, now, rospy.Duration(2.0))   WARNING BUG CODE!
+            #     trans,rot = self.listener.lookupTransform(self.odom_frame_id, self.base_frame_id, now)
+            #     distance = math.sqrt(pow(self.points_x[i]-trans[0],2)+pow(self.points_y[i].pose.pose.position.y-trans[1],2))
 
             success = self.move_base.wait_for_result(rospy.Duration(60)) 
             state = self.move_base.get_state()
@@ -86,6 +86,6 @@ class groundRobot:
 
         self.start_route()
 
-xteste = groundRobot()
+turtlebot = groundRobot()
 rospy.spin()
 
