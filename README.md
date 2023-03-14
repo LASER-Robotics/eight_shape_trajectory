@@ -1,6 +1,6 @@
 # The LASER 8-shape Trajectory Generator
 
-This repository contains a code to generate 8-shape trajectories for evaluating control algorithms. You run the Python code inside the [notebook](notebook) to get a file with the desired path.
+This repository contains a code to generate 8-shape trajectories for evaluating control algorithms. You run the Python code inside the [notebook](notebook/8_shape_trajectory_generator.ipynb) to get a file with the desired path.
 
 ## Quickstart
 
@@ -8,7 +8,7 @@ We strongly recommend running this code on the [Google Colab website](https://co
 
 ## Usage
 
-You can find usage examples in the [notebook](notebook).
+You can find usage examples in the [notebook](notebook/8_shape_trajectory_generator.ipynb).
 
 ## Contributions and future works
 
