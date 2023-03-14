@@ -4,11 +4,11 @@ This repository contains a code to generate 8-shape trajectories for evaluating 
 
 ## Quickstart
 
-Run the code inside the [Python notebook](notebook/8_shape_trajectory_generator.ipynb) to get a file with the desired path. We strongly recommend running this on the [Google Colab website](https://colab.research.google.com/) since you only need the output file.
+Run the code inside the [Python notebook](notebooks/8_shape_trajectory_generator.ipynb) to get a file with the desired path. We strongly recommend running this on the [Google Colab website](https://colab.research.google.com/) since you only need the output file.
 
 ## Usage
 
-You can find usage examples in the [Python notebook](notebook/8_shape_trajectory_generator.ipynb).
+You can find usage examples in the [Python notebook](notebooks/8_shape_trajectory_generator.ipynb).
 
 ## Contributions and future works
 
